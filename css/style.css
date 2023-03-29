@@ -4,9 +4,10 @@ body {
   color: white;
   background-color: #1f1f1f;
   font-family: "Poppins", sans-serif;
+}
+p {
   text-align: justify;
 }
-
 .logo h2 {
   font-family: "Alex Brush", cursive;
   font-size: 1.7rem;
@@ -60,9 +61,6 @@ body {
 .con_main1 {
   width: 80%;
 }
-p {
-  text-align: justif;
-}
 
 .row11 {
   display: flex;
@@ -115,13 +113,6 @@ textarea {
   width: 80%;
 }
 
-@media (max-width: 500px) {
-  .conr1 {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 input[type="submit"]:hover {
   color: #1f1f1f;
   background-color: white;
@@ -132,4 +123,76 @@ input[type="submit"]:hover {
 }
 .span1 {
   color: green;
+}
+
+.container_ff {
+  display: flex;
+  justify-content: center;
+}
+.ecen {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 3rem 0rem 3rem 0rem;
+}
+.cf {
+  display: flex;
+  flex-direction: column;
+  background-color: #414141;
+  border-radius: 3rem;
+  width: 90%;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms;
+}
+
+.cf h4 {
+  border-bottom: 3px solid #41bfdf;
+  line-height: 3rem;
+  width: 85%;
+}
+.cf:hover {
+  box-shadow: inset 0.5rem 0.7rem 0.4rem #41bfdf;
+}
+.cf p {
+  width: 85%;
+}
+
+@media (max-width: 1000px) {
+  .ecen {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .conr1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ecen {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .cf {
+    display: flex;
+    flex-direction: column;
+    background-color: #414141;
+    border-radius: 3rem;
+    width: 100%;
+    height: 20rem;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms;
+  }
+  .cf h4 {
+    font-size: 1.2rem;
+  }
 }

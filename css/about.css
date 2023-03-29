@@ -21,14 +21,17 @@
   position: absolute;
   top: -0.3em;
   left: 0.001em;
-  z-index: -1;
+}
+.im2 img {
+  width: 35rem;
+  border-radius: 3rem;
 }
 .conter2 .title1 {
   font-size: 7em;
   font-weight: bold;
 }
 .conter2 .prera {
-  font-size: 13px;
+  font-size: 1rem;
 }
 .ad {
   padding-left: 4rem;
